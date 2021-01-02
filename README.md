@@ -1,4 +1,10 @@
-Steps to create simple react app using webpack/babel to compile jsx files
+To simply use/make this app your own, run "npm install", then "npm run build" and "npm start" and you're good to go!
+
+
+
+
+
+Steps to recreate this simple react app using webpack/babel to compile jsx files
 
 1)
   [npm init] to create package.json
@@ -53,3 +59,13 @@ Steps to create simple react app using webpack/babel to compile jsx files
 
      - "build": "npx webpack -w"
      - "start": "nodemon server"
+
+
+
+
+References I used to create this app:
+
+https://webpack.js.org/guides/getting-started/
+https://webpack.js.org/loaders/babel-loader/
+
+and the react docs.

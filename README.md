@@ -1,3 +1,5 @@
+Steps to create simple react app using webpack/babel to compile jsx files
+
 1)
   [npm init] to create package.json
 

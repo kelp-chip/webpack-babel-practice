@@ -63,6 +63,8 @@ This is where you can link to your react components/create them. Check out the t
 
 9) And that's it! To start up the app, run "npm run build" in one terminal and "npm start" in another. Visit localhost:3030 to view your page.
 
+10) *Optional - if you plan to create a git repo make sure to create a .gitignore file that contains node_modules and dist folders
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 

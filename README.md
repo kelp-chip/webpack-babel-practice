@@ -58,7 +58,7 @@ If you copied the code from step 4 exactly it should show up in a new folder cal
      - "start": "nodemon server"
 
 
-8) create a folder called client and create a file called index.js. This is your point of entry that was mentioned previously in step 4.
+8) create a folder called client and create a file called index.js within it. This is your point of entry that was mentioned previously in step 4.
 This is where you can link to your react components/create them. Check out the the client folder in this project for reference if needed.
 
 9) And that's it! To run the app, run "npm run build" in one terminal and "npm start" in another. Visit localhost:3030 to view your page.

@@ -1,71 +1,73 @@
 To simply use/make this app your own, run "npm install", then "npm run build" and "npm start" and you're good to go!
 
-
-
+---------------------------------------------------------------------------------------------------------------------
 
 
 Steps to recreate this simple react app using webpack/babel to compile jsx files
 
-1)
-  [npm init] to create package.json
+1) run "npm init" to create package.json
 
-2)
-  install dependencies for front end and backend:
-  [npm i express react react-dom]
+2) run "npm i express react react-dom" this installs express and necessary react packages
 
-3)
-  install dev dependencies:
-  [npm i @babel/core @babel/preset-env @babel/preset-react babel-loader nodemon webpack webpack-cli -D]
+3) run "npm i @babel/core @babel/preset-env @babel/preset-react babel-loader nodemon webpack webpack-cli -D" to install necessary development packages
 
-4)
-  create file called "webpack.config.js" and copy paste this in there - read through because a lot of it is pretty obvious:
+4) create a file called "webpack.config.js". 
 
-  const path = require('path');
+The first module will designate your the entry point of the files you want to compile 
+and the file name for the place you want your compiled code to be saved to.
 
-  module.exports = {
-    entry: './client/index.js',
-    mode: "development",
-    output: {
-      filename: 'bundle.js',
-      path: path.resolve(__dirname, 'dist'),
-    },
+The second module is for your babel loader info.
 
-    module: {
-      rules: [
-        {
-          test: /\.jsx?$/,
-          exclude: /(node_modules)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-react', '@babel/preset-env']
+Copy/paste this code in your newly created file:
+
+    const path = require('path');
+    module.exports = {
+      entry: './client/index.js',
+      mode: "development",
+      output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+      },
+
+     module: {
+        rules: [
+          {
+            test: /\.jsx?$/,
+            exclude: /(node_modules)/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-react', '@babel/preset-env']
+              }
             }
           }
-        }
-      ]
-    }
-
-  };
+        ]
+      }
+    };
 
 
-5)
-  create your express server folder and create your express routes within index.js
+5) create a folder for your server and create an index.js file for your express routes
 
-6)
-  create your index.html and include a script that links to your bundle.js (or whatever you called it) file that babel should create for you after you run the special command
+6) create your index.html and include a script that links to your bundle.js (or whatever file name you decided on)
+This file should be created automatically by webpack once you've run "npm run build" (This is a script we will write ourselves in step 7).
+If you copied the code from step 4 exactly it should show up in a new folder called "dist"
 
-7)
-  Create these scripts:
+7) Create these scripts in package.json:
 
      - "build": "npx webpack -w"
      - "start": "nodemon server"
 
 
+8) create a folder called client and create a file called index.js. This is your point of entry that was mentioned previously in step 4.
+This is where you can link to your react components/create them. Check out the the client folder in this project for reference if needed.
 
+9) And that's it! To run the app, run "npm run build" in one terminal and "npm start" in another. Visit localhost:3030 to view your page.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
 References I used to create this app:
 
 https://webpack.js.org/guides/getting-started/
 https://webpack.js.org/loaders/babel-loader/
-
-and the react docs.
+https://reactjs.org/docs/getting-started.html

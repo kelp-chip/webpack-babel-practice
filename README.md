@@ -66,8 +66,10 @@ This is where you can link to your react components/create them. Check out the t
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-References I used to create this app:
+References I used to create this environment:
 
 https://webpack.js.org/guides/getting-started/
+
 https://webpack.js.org/loaders/babel-loader/
+
 https://reactjs.org/docs/getting-started.html

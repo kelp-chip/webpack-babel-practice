@@ -13,8 +13,8 @@ Steps to recreate this simple react app using webpack/babel to compile jsx files
 
 4) create a file called "webpack.config.js". 
 
-The first module will designate your the entry point of the files you want to compile 
-and the file name for the place you want your compiled code to be saved to.
+The first module will designate the entry point of the files you want to compile 
+and the file name for the place you want your compiled code to go.
 
 The second module is for your babel loader info.
 

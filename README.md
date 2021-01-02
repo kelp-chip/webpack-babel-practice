@@ -3,7 +3,7 @@ To use/make this app your own, run "npm install", then "npm run build" and "npm 
 ---------------------------------------------------------------------------------------------------------------------
 
 
-Steps to recreate this simple react app using webpack/babel to compile jsx files
+Steps to recreate this environment yourself:
 
 1) run "npm init" to create package.json
 

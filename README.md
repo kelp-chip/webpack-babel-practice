@@ -1,4 +1,4 @@
-To simply use/make this app your own, run "npm install", then "npm run build" and "npm start" and you're good to go!
+To use/make this app your own, run "npm install", then "npm run build" and "npm start" and you're good to go!
 
 ---------------------------------------------------------------------------------------------------------------------
 

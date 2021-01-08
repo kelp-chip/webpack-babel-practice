@@ -1,3 +1,5 @@
+1/8/21: Just to be clear this only outlines how to use Babel WITH Webpack - Be sure not to reference it for today's mini sprint! :S
+
 To use/make this app your own, run "npm install", then "npm run build" and "npm start" and you're good to go!
 
 ---------------------------------------------------------------------------------------------------------------------

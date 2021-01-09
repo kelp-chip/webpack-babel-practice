@@ -26,7 +26,7 @@ Copy/paste this code in your newly created file:
       mode: "development",
       output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'), //this is the folder you want to save your bundle in - feel free to change
       },
 
      module: {

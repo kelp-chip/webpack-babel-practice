@@ -68,7 +68,7 @@ This is where you can link to your react components/create them. Check out the t
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-References I used to write this project:
+References I used to write this guide:
 
 https://webpack.js.org/guides/getting-started/
 

@@ -32,7 +32,7 @@ Copy/paste this code in your newly created file:
      module: {
         rules: [
           {
-            test: /\.jsx?$/,
+            test: /\.(js|jsx)$/,
             exclude: /(node_modules)/,
             use: {
               loader: 'babel-loader',

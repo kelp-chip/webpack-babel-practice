@@ -16,7 +16,7 @@
 
 
 These additional files will be added automatically after running scripts in our terminal:
-
+.
 ├── <b>package.json</b>
 └── client
     └── public

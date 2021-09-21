@@ -2,13 +2,13 @@ Here is the basic file structure this guide will be using. Feel free to change t
 
 ```
 .
-├── index.html
+├── client
+│   └── index.js
 ├── dist
 │   └── bundle.js
 ├── server
 │   └── index.js
-├── client
-│   └── index.js
+├── index.html
 ├── package.json
 └── webpack.config.js
 ```

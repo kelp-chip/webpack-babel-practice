@@ -20,7 +20,7 @@ This additional folder/file will be added automatically after running our webpac
 ---------------------------------------------------------------------------------------------------------------------
 
 
-## Steps to recreate this environment:
+# Guide to recreate this environment:
 
 1) run ```npm init``` to create package.json
 

@@ -10,6 +10,7 @@ Here is the basic file structure this guide will be using. Feel free to change t
 ├── package.json
 └── webpack.config.js
 
+
 This additional folder/file will be added automatically after running our webpack script:
 
 └── dist

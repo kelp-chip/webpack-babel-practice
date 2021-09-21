@@ -96,6 +96,7 @@ module.exports = {
 
 #### ./client/src/index.js
 - this will be the index for your react files (the entry point mentioned in step 4)
+- check out this project's ./client/src files if you need additional help setting this up
 
 #### ./client/public/index.html
 - make sure to link to your bundle here
@@ -111,6 +112,7 @@ module.exports = {
 const path = require("path");
 app.use(express.static(path.join(__dirname, "..", "client", "public")));
 ```
+- check out this projects ./server/index.js file if you need additional help setting this up
 
 
 6) Create these scripts in package.json:

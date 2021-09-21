@@ -123,6 +123,7 @@ dist
 
 - Once you set up express and your client index.js file, run ```npm run build``` in one terminal and ```npm start``` in another. 
 - Visit localhost:[your port number here] to view your page.
+- Happy coding! :)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -4,13 +4,16 @@ Here is the basic file structure this guide will be using. Feel free to change t
 .
 ├── client
 │   └── index.js
-├── dist
-│   └── bundle.js
 ├── server
 │   └── index.js
 ├── index.html
 ├── package.json
 └── webpack.config.js
+
+This additional folder/file will be added automatically after running our webpack script:
+
+└── dist
+    └── bundle.js
 ```
 
 ---------------------------------------------------------------------------------------------------------------------

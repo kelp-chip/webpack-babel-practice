@@ -1,4 +1,6 @@
-Here is the basic file structure this guide will be using. Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths while setting everything up.
+## File structure details:
+
+Here is the basic file structure this guide will be using. Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths during set up.
 
 ```
 .

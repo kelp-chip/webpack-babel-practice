@@ -105,7 +105,7 @@ app.use(express.static(path.join(__dirname, '..')));
      - "build": "npx webpack -w"
      - "start": "nodemon server"
 
-7) If you plan to push to github make sure to create a .gitignore file in your root folder and copy/paste the following:
+7) If you plan to push to github make sure to create a **.gitignore** file in your root folder and copy/paste the following:
 
 ```
 node_modules

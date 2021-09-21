@@ -12,6 +12,7 @@
 │       └── index.js
 ├── server
 │   └── index.js
+├──.gitignore
 └── webpack.config.js
 
 

@@ -22,9 +22,10 @@ This additional folder/file will be added automatically after running our webpac
 
 ## Steps to recreate this environment:
 
-1) run "npm init" to create package.json - this will create our package.json file.
+1) run ```npm init``` to create package.json
 
-2) Run the following scripts in your terminal to install necessary packages:
+
+2) Run the following scripts in your terminal to install our necessary packages:
 
 (shortcut to open terminal in VS Code on a mac: Ctrl + `/~ key)
 ```
@@ -35,9 +36,8 @@ npm i express react react-dom
 npm i @babel/core @babel/preset-env @babel/preset-react babel-loader nodemon webpack webpack-cli html-loader style-loader css-loader -D
 ```
 
-4) create a file called "webpack.config.js". 
 
-Copy/paste this code in your newly created file:
+4) create the file **./webpack.config.js** and copy/paste the following code:
 
 ```
 const path = require('path');
@@ -73,6 +73,7 @@ module.exports = {
           loader: "html-loader",
         },
       },
+      /* This section is optional and will give you the ability to import css files in react */
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -82,6 +83,7 @@ module.exports = {
 };
 
 ```
+
 
 5) Create the following folders and files:
 
@@ -108,6 +110,7 @@ app.use(express.static(path.join(__dirname, '..')));
 
      - "build": "npx webpack -w"
      - "start": "nodemon server"
+
 
 7) If you plan to push to github make sure to create a **.gitignore** file in your root folder and copy/paste the following:
 

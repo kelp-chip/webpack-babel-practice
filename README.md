@@ -2,22 +2,26 @@
 
 Here is the basic file structure this guide will be using. Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths during set up.
 
-```
+<pre>
 .
 ├── client
-│   └── index.js
+│   ├──public
+│   │   └── index.html
+│   └── src
+│       └── index.js
 ├── server
 │   └── index.js
 ├── index.html
-├── package.json
 └── webpack.config.js
 
 
-This additional folder/file will be added automatically after running our webpack script:
+These additional files will be added automatically after running scripts in our terminal:
 
-└── dist
-    └── bundle.js
-```
+├── <b>package.json</b>
+└── client
+    └── public
+        └── <b>bundle.js</b>
+</pre>
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -48,11 +52,11 @@ const path = require('path');
 and the file name for where you want your bundled file to be created. */
 
 module.exports = {
-  entry: "./client/index.js",
+  entry: "./client/src/index.js",
   mode: "development",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"), //this is the folder you want your bundled code to go
+    path: path.resolve(__dirname, "./client/public"), //this is the folder you want your bundled code to go
   },
 
 
@@ -89,13 +93,13 @@ module.exports = {
 
 5) Create the following folders and files:
 
-#### ./client/index.js
+#### ./client/src/index.js
 - this will be the index for your react files (the entry point mentioned in step 4)
 
-#### ./index.html
+#### ./client/public/index.html
 - make sure to link to your bundle here
 ```
-<script src="./dist/bundle.js"></script>
+<script src="./bundle.js"></script>
 ```
 - Remember your bundle file will be created automatically by webpack once you've run "npm run build" (This is a script we will write ourselves in the following step).
 
@@ -104,7 +108,7 @@ module.exports = {
 - make sure to link your html file: 
 ```
 const path = require("path");
-app.use(express.static(path.join(__dirname, '..')));
+app.use(express.static(path.join(__dirname, "..", "client", "public")));
 ```
 
 

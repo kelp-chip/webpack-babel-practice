@@ -22,7 +22,7 @@ This additional folder/file will be added automatically after running our webpac
 
 ## Steps to recreate this environment:
 
-1) run "npm init" to create package.json
+1) run "npm init" to create package.json - this will create our package.json file.
 
 2) Run the following scripts in your terminal to install necessary packages:
 

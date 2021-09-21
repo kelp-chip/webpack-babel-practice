@@ -1,6 +1,7 @@
 ## File structure details:
 
-Here is the basic file structure this guide will be using. Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths during set up.
+- Here is the basic file structure this guide will be using.
+- Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths during set up.
 
 <pre>
 .
@@ -11,7 +12,6 @@ Here is the basic file structure this guide will be using. Feel free to change t
 │       └── index.js
 ├── server
 │   └── index.js
-├── index.html
 └── webpack.config.js
 
 

@@ -1,4 +1,17 @@
-Check out the file structure of this app to help guide you while setting up your own environment.
+Here is the basic file structure this guide will be using. Feel free to change this up however you'd like but keep in mind that you will need to change a number of paths while setting everything up.
+
+```
+.
+├── index.html
+├── dist
+│   └── bundle.js
+├── server
+│   └── index.js
+├── client
+│   └── index.js
+├── package.json
+└── webpack.config.js
+```
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -68,17 +81,17 @@ module.exports = {
 
 5) Create the following folders and files:
 
-#### /client/index.js
+#### ./client/index.js
 - this will be the index for your react files (the entry point mentioned in step 4)
 
-#### /index.html
+#### ./index.html
 - make sure to link to your bundle here
 ```
 <script src="./dist/bundle.js"></script>
 ```
 - Remember your bundle file will be created automatically by webpack once you've run "npm run build" (This is a script we will write ourselves in the following step).
 
-#### /server/index.js
+#### ./server/index.js
 - this is where you will set up express and write your routes
 - make sure to link your html file: 
 ```
@@ -99,9 +112,10 @@ node_modules
 dist
 ```
 
-### And that's it! To start up the app, run "npm run build" in one terminal and "npm start" in another. 
+### And that's it! 
 
-Visit localhost:[your port number here] to view your page.
+- Once you set up express and your client index.js file, run "npm run build" in one terminal and "npm start" in another. 
+- Visit localhost:[your port number here] to view your page.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
